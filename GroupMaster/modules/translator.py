@@ -23,7 +23,7 @@ def do_translate(bot: Bot, update: Update, args: List[str]):
         translated = translator.translate(to_translate_text, dest=lan)
         src_lang = translated.src
         translated_text = translated.text
-        msg.reply_text("*Dịch từ {} sang {}.*\n\n {}".format(src_lang, lan, translated_text))
+        msg.reply_text("**Dịch từ {} sang {}.**\n\n {}".format(src_lang, lan, translated_text))
     except :
         msg.reply_text("Lỗi")
 
