@@ -143,10 +143,10 @@ def send_start(bot, update):
     keyboard += [[InlineKeyboardButton(text="🛠 Báo cáo", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
-    keyboard += [[InlineKeyboardButton(text="Updates Channel 🗣", url="t.me/owogram"),
-        InlineKeyboardButton(text="Support Group 👥", url="t.me/vuoneden")]]
+    keyboard += [[InlineKeyboardButton(text="Kênh thông báo 🗣", url="t.me/owogram"),
+        InlineKeyboardButton(text="Nhóm cộng đồng 👥", url="t.me/owohub")]]
     
-    keyboard += [[InlineKeyboardButton(text="➕ Thêm tôi vào nhóm của bạn ➕", url="t.me/owogrambot?startgroup=true")]]
+    keyboard += [[InlineKeyboardButton(text="➕ Thêm tôi vào nhóm của bạn ➕", url="t.me/owogram_robot?startgroup=true")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
@@ -161,7 +161,7 @@ def control_panel(bot, update):
 
         update.effective_message.reply_text("Liên hệ với tôi trong PM để truy cập bảng điều khiển.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Control Panel",
+                                                [[InlineKeyboardButton(text="Bảng điều khiển",
                                                                        url=f"t.me/{bot.username}?start=controlpanel")]]))
         return
 
@@ -195,14 +195,14 @@ def control_panel(bot, update):
             member = chatG.get_member(user.id)
             if member.status in ('administrator', 'creator'):
                 text += f"\nConnected chat - *{chatG.title}* (you {member.status})"
-                keyboard += [[InlineKeyboardButton(text="👥 Group settings", callback_data="cntrl_panel_G_back")]]
+                keyboard += [[InlineKeyboardButton(text="👥 Cài đặt nhóm", callback_data="cntrl_panel_G_back")]]
             elif user.id in SUDO_USERS:
                 text += f"\nConnected chat - *{chatG.title}* (you sudo)"
-                keyboard += [[InlineKeyboardButton(text="👥 Group settings (SUDO)", callback_data="cntrl_panel_G_back")]]
+                keyboard += [[InlineKeyboardButton(text="👥 Cài đặt nhóm (SUDO)", callback_data="cntrl_panel_G_back")]]
             else:
-                text += f"\nConnected chat - *{chatG.title}* (you aren't an admin!)"
+                text += f"\nTrò chuyện được kết nối - *{chatG.title}* (bạn không phải là quản trị viên!)"
         else:
-            text += "\nNo chat connected!"
+            text += "\nKhông có cuộc trò chuyện nào được kết nối!"
 
         keyboard += [[InlineKeyboardButton(text="Back", callback_data="bot_start")]]
 
