@@ -198,7 +198,7 @@ If you want multiple buttons on the same line, use :same, as such:
 This will create two buttons on a single line, instead of one button per line.
 """
 
-EnglishStrings = {
+VietnameseStrings = {
     "send-start": """Hi {}, My name is {} 🇱🇰 If you have any questions on how to use me, read /help - and then head to @YanaBotGroup.
 
 I'm a group manager bot maintained by [this person](tg://user?id={654839744}).
