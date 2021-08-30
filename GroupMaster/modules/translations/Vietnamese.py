@@ -82,7 +82,7 @@ INSULTS_STRINGS = (
     "Mọi người đều có quyền ngu ngốc nhưng bạn đang lạm dụng đặc quyền.",
     "Tôi xin lỗi tôi đã làm tổn thương cảm xúc của bạn khi tôi gọi bạn là ngu ngốc. Tôi nghĩ bạn đã biết rằng.",
     "Bạn nên thử nếm thử xyanide.",
-    "Enzyme của bạn có nghĩa là tiêu hóa chất độc chuột.
+    "Enzyme của bạn có nghĩa là tiêu hóa chất độc chuột.",
     "Bạn nên thử ngủ mãi mãi.",
     "Đón một khẩu súng và tự bắn mình.",
     "Bạn có thể tạo ra một kỷ lục thế giới bằng cách nhảy từ một chiếc máy bay mà không cần dù.",
