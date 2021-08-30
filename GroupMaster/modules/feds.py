@@ -35,7 +35,7 @@ import GroupMaster.modules.sql.feds_sql as sql
 #
 # Total spended for making this features is 68+ hours
 
-LOGGER.info("Original federation module by MrYacha, reworked by Mizukito Akito (@RealAkito) on Telegram.")
+LOGGER.info("Original federation module by @owogram, reworked by @RyoStar on Telegram.")
 
 
 FBAN_ERRORS = {
@@ -83,7 +83,7 @@ def new_fed(bot: Bot, update: Update):
 
 		x = sql.new_fed(user.id, fed_name, fed_id)
 		if not x:
-			update.effective_message.reply_text("Federation creation failed! Keep in the mind that this rarely happened! Ask in @leosupportx for help!")
+			update.effective_message.reply_text("Federation creation failed! Keep in the mind that this rarely happened! Ask in @ryostar for help!")
 			return
 
 		update.effective_message.reply_text("*You have successfully created a new federation!*"\
@@ -1078,15 +1078,15 @@ def __user_info__(user_id, chat_id):
 		infoname = info['fname']
 
 		if int(info['owner']) == user_id:
-			text = "This user is the owner of the current Federation: <b>{}</b>.".format(infoname)
+			text = "Người dùng này là chủ sở hữu của Liên kết hiện tại: <b>{}</b>.".format(infoname)
 		elif is_user_fed_admin(fed_id, user_id):
-			text = "This user is the admin of the current Federation: <b>{}</b>.".format(infoname)
+			text = "Người dùng này là quản trị viên của Liên kết hiện tại: <b>{}</b>.".format(infoname)
 
 		elif fban:
-			text = "Banned in the current Federation: <b>Yes</b>"
-			text += "\n<b>Reason:</b> {}".format(fbanreason)
+			text = "Bị cấm trong Liên đoàn hiện tại: <b>Yes</b>"
+			text += "\n<b>Lý do:</b> {}".format(fbanreason)
 		else:
-			text = "Banned in the current Federation: <b>No</b>"
+			text = "Bị cấm trong Liên đoàn hiện tại: <b>No</b>"
 	else:
 		text = ""
 	return text
@@ -1113,13 +1113,13 @@ def get_chat(chat_id, chat_data):
 __mod_name__ = "Federation"
 
 __help__ = """
-Ah, group management. Everything is fun, until the spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
+À, quản lý nhóm. Mọi thứ đều vui vẻ, cho đến khi kẻ gửi thư rác bắt đầu xâm nhập vào nhóm của bạn và bạn phải chặn nó. Sau đó, bạn cần phải bắt đầu cấm nhiều hơn, và nhiều hơn nữa, và điều đó rất đau.
 But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?
 
-No longer! With Federation, you can make a ban in one chat overlap with all other chats.
-You can even designate admin federations, so your trusted admin can ban all the chats you want to protect.
+Không còn! Với Liên kết, bạn có thể đặt lệnh cấm trong một cuộc trò chuyện trùng lặp với tất cả các cuộc trò chuyện khác.
+Bạn thậm chí có thể chỉ định liên kết quản trị viên, vì vậy quản trị viên đáng tin cậy của bạn có thể cấm tất cả các cuộc trò chuyện mà bạn muốn bảo vệ.
 
-Still the experimental stage, to make Federation can only be done by my maker
+Vẫn là giai đoạn thử nghiệm, để tạo ra Liên kết chỉ có thể được thực hiện bởi nhà sản xuất của tôi
 
 Command:
  - /newfed <fedname>: create a new Federation with the name given. Users are only allowed to have one Federation. This method can also be used to rename the Federation. (max. 64 characters)
