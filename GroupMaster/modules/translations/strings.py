@@ -1,6 +1,6 @@
 from GroupMaster.modules.sql.translation import prev_locale
 from GroupMaster.modules.translations.English import EnglishStrings
-from GroupMaster.modules.translations.Russian import VietnameseStrings
+from GroupMaster.modules.translations.Vietnamese import VietnameseStrings
 
 
 def tld(chat_id, t, show_none=True):
