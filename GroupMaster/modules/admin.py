@@ -57,7 +57,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
     bot_member = chatD.get_member(bot.id)
 
     bot.promoteChatMember(chatD.id, user_id,
-                          can_change_info=bot_member.can_change_info,
+                          #can_change_info=bot_member.can_change_info,
                           can_post_messages=bot_member.can_post_messages,
                           can_edit_messages=bot_member.can_edit_messages,
                           can_delete_messages=bot_member.can_delete_messages,
@@ -66,7 +66,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                           can_pin_messages=bot_member.can_pin_messages,
                           can_promote_members=bot_member.can_promote_members)
 
-    message.reply_text(tld(chat.id, f"Successfully promoted in *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+    message.reply_text(tld(chat.id, f"Đã thăng cấp thành công trong *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
     return f"<b>{html.escape(chatD.title)}:</b>" \
             "\n#PROMOTED" \
            f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -101,7 +101,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_member = chatD.get_member(user_id)
     if user_member.status == 'creator':
-        message.reply_text(tld(chat.id, "This person CREATED the chat, how would I demote them?"))
+        message.reply_text(tld(chat.id, "Người này ĐÃ TẠO cuộc trò chuyện, tôi sẽ hạ cấp họ như thế nào?"))
         return ""
 
     if not user_member.status == 'administrator':
@@ -122,7 +122,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text(tld(chat.id, f"Successfully demoted in *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+        message.reply_text(tld(chat.id, f"Đã hạ cấp thành công trong *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
         return f"<b>{html.escape(chatD.title)}:</b>" \
                 "\n#DEMOTED" \
                f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -130,7 +130,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     except BadRequest:
         message.reply_text(
-            tld(chat.id, "Could not demote. I might not be admin, or the admin status was appointed by another user, so I can't act upon them!")
+            tld(chat.id, "Không thể hạ cấp. Tôi có thể không phải là quản trị viên hoặc trạng thái quản trị viên được chỉ định bởi một người dùng khác, vì vậy tôi không thể hành động dựa trên họ!")
             )
         return ""
 
@@ -234,12 +234,12 @@ def adminlist(bot, update):
     
     administrators = chatP.get_administrators()
 
-    text = tld(chat.id, "Admins in") + " *{}*:".format(chatP.title or tld(chat.id, "this chat"))
+    text = tld(chat.id, "Quản trị viên trong") + " *{}*:".format(chatP.title or tld(chat.id, "nhóm này"))
     for admin in administrators:
         user = admin.user
         status = admin.status
         if status == "creator":
-            name = user.first_name + (user.last_name or "") + tld(chat.id, " (Creator)")
+            name = user.first_name + (user.last_name or "") + tld(chat.id, " (Chủ group)")
         else:
             name = user.first_name + (user.last_name or "")
         text += f"\n• `{name}`"
@@ -271,14 +271,14 @@ def reaction(bot: Bot, update: Update, args: List[str]) -> str:
         
 
 __help__ = """
- - /adminlist | /admins: list of admins in the chat
+ - /adminlist | /admins: danh sách quản trị viên trong cuộc trò chuyện
 
 *Admin only:*
- - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
- - /unpin: unpins the currently pinned message
- - /invitelink: gets invitelink
- - /promote: promotes the user replied to
- - /demote: demotes the user replied to
+ - /pin: âm thầm ghim tin nhắn đã trả lời - add 'loud' or 'notify' to give notifs to users.
+ - /unpin: bỏ ghim tin nhắn hiện được ghim
+ - /invitelink: được invitelink
+ - /promote: set admin cho người dùng
+ - /demote: hủy admin cho người dùng
 """
 
 __mod_name__ = "Admin"
