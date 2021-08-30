@@ -20,15 +20,7 @@ from GroupMaster.modules.helper_funcs.misc import paginate_modules
 from GroupMaster.modules.translations.strings import tld, tld_help 
 from GroupMaster.modules.connection import connected
 
-PM_START = """Hello {} 👋
-
-I'm  {} 🇱🇰
-
-I can Manage your groups with more functions 😏
-
-Click /help or Help button below to find out more about how to use me to my full potential 🙂
-
-Leo Projects 🇱🇰
+PM_START = """Hello {} 👋 Tôi có thể Quản lý nhóm của bạn với nhiều chức năng hơn😏
 """
 
 
@@ -53,7 +45,7 @@ for module_name in ALL_MODULES:
     if not imported_module.__mod_name__.lower() in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Không thể có hai mô-đun có cùng tên! Vui lòng thay đổi một")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module
@@ -98,7 +90,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(bot: Bot, update: Update):
     #pprint(eval(str(update)))
     #update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("This person edited a message")
+    update.effective_message.reply_text("Người này đã sửa một tin nhắn")
     print(update.effective_message)
 
 
@@ -112,7 +104,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             if args[0].lower() == "help":
                 send_help(update.effective_chat.id, tld(chat.id, "send-help").format(
                      dispatcher.bot.first_name, "" if not ALLOW_EXCL else tld(
-                         chat.id, "\nAll commands can either be used with `/` or `!`.\n"
+                         chat.id, "\nTất cả các lệnh đều có thể được sử dụng với `/` or `!`.\n"
                              )))
 
             elif args[0].lower().startswith("stngs_"):
@@ -147,14 +139,14 @@ def send_start(bot, update):
     text = PM_START
 
     
-    keyboard = [[InlineKeyboardButton(text="🇱🇰 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
+    keyboard = [[InlineKeyboardButton(text="🇻🇳 Ngôn ngữ", callback_data="set_lang_")]]
+    keyboard += [[InlineKeyboardButton(text="🛠 Báo cáo", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
-    keyboard += [[InlineKeyboardButton(text="Updates Channel 🗣", url="t.me/new_ehi"),
-        InlineKeyboardButton(text="Support Group 👥", url="t.me/leosupportx")]]
+    keyboard += [[InlineKeyboardButton(text="Updates Channel 🗣", url="t.me/owogram"),
+        InlineKeyboardButton(text="Support Group 👥", url="t.me/vuoneden")]]
     
-    keyboard += [[InlineKeyboardButton(text="➕ Add me to your group ➕", url="t.me/groupmasternaviya_bot?startgroup=true")]]
+    keyboard += [[InlineKeyboardButton(text="➕ Thêm tôi vào nhóm của bạn ➕", url="t.me/owogrambot?startgroup=true")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
@@ -167,7 +159,7 @@ def control_panel(bot, update):
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
 
-        update.effective_message.reply_text("Contact me in PM to access the control panel.",
+        update.effective_message.reply_text("Liên hệ với tôi trong PM để truy cập bảng điều khiển.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Control Panel",
                                                                        url=f"t.me/{bot.username}?start=controlpanel")]]))
@@ -190,7 +182,7 @@ def control_panel(bot, update):
     if M_match:
         text = "*Control panel* 🛠"
 
-        keyboard = [[InlineKeyboardButton(text="👤 My settings", callback_data="cntrl_panel_U(1)")]]
+        keyboard = [[InlineKeyboardButton(text="👤 Cài đặt của tôi", callback_data="cntrl_panel_U(1)")]]
 
         #Show connected chat and add chat settings button
         conn = connected(bot, update, chat, user.id, need_admin=False)
@@ -236,7 +228,7 @@ def control_panel(bot, update):
             query.message.reply_text(text=text, arse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(keyboard))
 
         elif back_match:
-            text = "*User control panel* 🛠"
+            text = "*Bảng điều khiển người dùng* 🛠"
             
             query.message.reply_text(text=text, parse_mode=ParseMode.MARKDOWN,
                     reply_markup=InlineKeyboardMarkup(paginate_modules(user.id, 0, USER_SETTINGS, "cntrl_panel_U")))
