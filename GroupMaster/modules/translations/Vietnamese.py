@@ -1,132 +1,132 @@
 RUN_STRINGS = (
-    "Where do you think you're going?",
-    "Huh? what? did they get away?",
-    "ZZzzZZzz... Huh? what? oh, just them again, nevermind.",
-    "Get back here!",
-    "Not so fast...",
-    "Look out for the wall!",
-    "Don't leave me alone with them!!",
-    "You run, you die.",
-    "Jokes on you, I'm everywhere",
-    "You're gonna regret that...",
-    "You could also try /kickme, I hear that's fun.",
-    "Go bother someone else, no-one here cares.",
-    "You can run, but you can't hide.",
-    "Is that all you've got?",
-    "I'm behind you...",
-    "You've got company!",
-    "We can do this the easy way, or the hard way.",
-    "You just don't get it, do you?",
-    "Yeah, you better run!",
-    "Please, remind me how much I care?",
-    "I'd run faster if I were you.",
-    "That's definitely the droid we're looking for.",
-    "May the odds be ever in your favour.",
-    "Famous last words.",
-    "And they disappeared forever, never to be seen again.",
-    "\"Oh, look at me! I'm so cool, I can run from a bot!\" - this person",
-    "Yeah yeah, just tap /kickme already.",
-    "Here, take this ring and head to Mordor while you're at it.",
-    "Legend has it, they're still running...",
-    "Unlike Harry Potter, your parents can't protect you from me.",
-    "Fear leads to anger. Anger leads to hate. Hate leads to suffering. If you keep running in fear, you might "
-    "be the next Vader.",
-    "Multiple calculations later, I have decided my interest in your shenanigans is exactly 0.",
-    "Legend has it, they're still running.",
-    "Keep it up, not sure we want you here anyway.",
-    "You're a wiza- Oh. Wait. You're not Harry, keep moving.",
-    "NO RUNNING IN THE HALLWAYS!",
-    "Hasta la vista, baby.",
-    "Who let the dogs out?",
-    "It's funny, because no one cares.",
-    "Ah, what a waste. I liked that one.",
-    "Frankly, my dear, I don't give a damn.",
-    "My milkshake brings all the boys to yard... So run faster!",
-    "You can't HANDLE the truth!",
-    "A long time ago, in a galaxy far far away... Someone would've cared about that. Not anymore though.",
-    "Hey, look at them! They're running from the inevitable banhammer... Cute.",
-    "Han shot first. So will I.",
-    "What are you running after, a white rabbit?",
-    "As The Doctor would say... RUN!",
+    "Bạn nghĩ bạn đang đi đâu?",
+    "Huh? Cái gì? Họ đã mất đi?",
+    "Zzzzzzzzz ... hả? Cái gì? Ồ, chỉ là họ một lần nữa, đừng bao giờ.",
+    "Quay lại đây!",
+    "Không quá nhanh...",
+    "Nhìn ra bức tường!",
+    "Đừng để tôi một mình với họ !!",
+    "Bạn chạy, bạn chết.",
+    "Đùa giỡn với bạn, tôi ở khắp mọi nơi",
+    "Bạn sẽ hối tiếc rằng ...",
+    "Bạn cũng có thể thử / kickme, tôi nghe thấy điều đó là niềm vui.",
+    "Đi làm phiền người khác, không ai ở đây quan tâm.",
+    "Bạn có thể chạy, nhưng bạn không thể che giấu.",
+    "Đó có phải là tất cả những gì bạn có?",
+    "Tôi ở sau bạn...",
+    "Bạn đã có công ty!",
+    "Chúng ta có thể làm điều này một cách dễ dàng, hoặc một cách khó khăn.",
+    "Bạn chỉ cần không nhận được nó, phải không?",
+    "Ừ, bạn chạy tốt hơn!",
+    "Xin vui lòng, nhắc nhở tôi rằng tôi quan tâm đến bao nhiêu?",
+    "Tôi sẽ chạy nhanh hơn nếu tôi là bạn.",
+    "Đó chắc chắn là DROID chúng ta đang tìm kiếm.",
+    "Có thể những khác lạ không bao giờ là sở thích của bạn.",
+    "Những lời cuối cùng nổi tiếng.",
+    "Và họ biến mất mãi mãi, không bao giờ được nhìn thấy nữa.",
+    "\"Ồ, nhìn tôi! Tôi rất tuyệt, tôi có thể chạy từ một bot!\"- Người này",
+    "Yeah Yeah, chỉ cần Tap / Kickme rồi.",
+    "Ở đây, hãy mang chiếc nhẫn này và đi đến Mordor trong khi bạn đang ở đó.",
+    "Legend có nó, họ vẫn đang chạy ...",
+    "Không giống như Harry Potter, bố mẹ bạn không thể bảo vệ bạn khỏi tôi.",
+    "Nỗi sợ hãi dẫn đến sự tức giận. Tức giận dẫn đến sự ghét bỏ. Ghét dẫn đến đau khổ. Nếu bạn tiếp tục chạy trong sợ hãi, bạn có thể"
+    "Hãy là Vader tiếp theo.",
+    "Nhiều tính toán sau, tôi đã quyết định sự quan tâm của mình trong shenanigans của bạn là chính xác là 0.",
+    "Legend có nó, họ vẫn đang chạy.",
+    "Giữ nó lên, không chắc chúng tôi muốn bạn ở đây dù sao đi nữa.",
+    "Bạn là một Wiza- Oh. Đợi. Bạn không phải Harry, tiếp tục di chuyển.",
+    "Không chạy trong hành lang!",
+    "Hẹn gặp lại bé con.",
+    "Ai để những con chó ra ngoài?",
+    "Thật buồn cười, vì không ai quan tâm.",
+    "À, thật lãng phí. Tôi thích cái đó.",
+    "Thành thật, em yêu, anh không cho chết tiệt.",
+    "Sữa lắc của tôi mang tất cả các chàng trai đến sân ... vì vậy hãy chạy nhanh hơn!",
+    "Bạn không thể xử lý sự thật!",
+    "Cách đây một thời gian dài, trong một thiên hà xa xôi ... Ai đó sẽ quan tâm đến điều đó. Không còn nữa.",
+    "Này, hãy nhìn vào họ! Họ đang chạy từ Bukmammer không thể tránh khỏi ... dễ thương.",
+    "Han bắn đầu tiên. Vì vậy, tôi sẽ,",
+    "Bạn đang chạy cái gì sau đó, một con thỏ trắng?",
+    "Khi bác sĩ sẽ nói ... Chạy!",
 )
 
 INSULTS_STRINGS = (
-    "Owww ... Such a stupid idiot.",
-    "Don't drink and type.",
-    "I think you should go home or better a mental asylum.",
-    "Command not found. Just like your brain.",
-    "Do you realize you are making a fool of yourself? Apparently not.",
-    "You can type better than that.",
-    "Bot rule 544 section 9 prevents me from replying to stupid humans like you.",
-    "Sorry, we do not sell brains.",
-    "Believe me you are not normal.",
-    "I bet your brain feels as good as new, seeing that you never use it.",
-    "If I wanted to kill myself I'd climb your ego and jump to your IQ.",
-    "Zombies eat brains... you're safe.",
-    "You didn't evolve from apes, they evolved from you.",
-    "Come back and talk to me when your I.Q. exceeds your age.",
-    "I'm not saying you're stupid, I'm just saying you've got bad luck when it comes to thinking.",
-    "What language are you speaking? Cause it sounds like bullshit.",
-    "Stupidity is not a crime so you are free to go.",
-    "You are proof that evolution CAN go in reverse.",
-    "I would ask you how old you are but I know you can't count that high.",
-    "As an outsider, what do you think of the human race?",
-    "Brains aren't everything. In your case they're nothing.",
-    "Ordinarily people live and learn. You just live.",
-    "I don't know what makes you so stupid, but it really works.",
-    "Keep talking, someday you'll say something intelligent! (I doubt it though)",
-    "Shock me, say something intelligent.",
-    "Your IQ's lower than your shoe size.",
-    "Alas! Your neurotransmitters are no more working.",
-    "Are you crazy you fool.",
-    "Everyone has the right to be stupid but you are abusing the privilege.",
-    "I'm sorry I hurt your feelings when I called you stupid. I thought you already knew that.",
-    "You should try tasting cyanide.",
-    "Your enzymes are meant to digest rat poison.",
-    "You should try sleeping forever.",
-    "Pick up a gun and shoot yourself.",
-    "You could make a world record by jumping from a plane without parachute.",
-    "Stop talking BS and jump in front of a running bullet train.",
-    "Try bathing with Hydrochloric Acid instead of water.",
-    "Try this: if you hold your breath underwater for an hour, you can then hold it forever.",
-    "Go Green! Stop inhaling Oxygen.",
-    "God was searching for you. You should leave to meet him.",
-    "give your 100%. Now, go donate blood.",
-    "Try jumping from a hundred story building but you can do it only once.",
-    "You should donate your brain seeing that you never used it.",
-    "Volunteer for target in an firing range.",
-    "Head shots are fun. Get yourself one.",
-    "You should try swimming with great white sharks.",
-    "You should paint yourself red and run in a bull marathon.",
-    "You can stay underwater for the rest of your life without coming back up.",
-    "How about you stop breathing for like 1 day? That'll be great.",
-    "Try provoking a tiger while you both are in a cage.",
-    "Have you tried shooting yourself as high as 100m using a canon.",
-    "You should try holding TNT in your mouth and igniting it.",
-    "Try playing catch and throw with RDX its fun.",
-    "I heard phogine is poisonous but i guess you wont mind inhaling it for fun.",
-    "Launch yourself into outer space while forgetting oxygen on Earth.",
-    "You should try playing snake and ladders, with real snakes and no ladders.",
-    "Dance naked on a couple of HT wires.",
-    "True Volcano is the best swimming pool for you.",
-    "You should try hot bath in a volcano.",
-    "Try to spend one day in a coffin and it will be yours forever.",
-    "Hit Uranium with a slow moving neutron in your presence. It will be a worthwhile experience.",
-    "You can be the first person to step on sun. Have a try.",
+    "Owww ... một thằng ngốc ngu ngốc như vậy.",
+    "Đừng uống và gõ.",
+    "Tôi nghĩ bạn nên về nhà hoặc tốt hơn một tị nạn tinh thần.",
+    "Lệnh không tìm thấy. Giống như bộ não của bạn.",
+    "Bạn có nhận ra mình đang tự lừa dối bản thân không? Rõ ràng là không.",
+    "Bạn có thể gõ tốt hơn thế.",
+    "Quy tắc bot 544 phần 9 ngăn tôi trả lời con người ngu ngốc như bạn.",
+    "Xin lỗi, chúng tôi không bán bộ não.",
+    "Hãy tin tôi là bạn không bình thường.",
+    "Tôi cá là bộ não của bạn cảm thấy tốt như mới, thấy rằng bạn không bao giờ sử dụng nó.",
+    "Nếu tôi muốn tự sát, tôi sẽ leo lên cái tôi của bạn và nhảy vào IQ của bạn.",
+    "Zombie ăn bộ não ... bạn an toàn.",
+    "Bạn đã không phát triển từ vượn, họ phát triển từ bạn.",
+    "Hãy quay lại và nói chuyện với tôi khi I.Q của bạn vượt quá tuổi của bạn.",
+    "Tôi không nói bạn thật ngu ngốc, tôi chỉ nói rằng bạn đã gặp xui xẻo khi nghĩ.",
+    "Ngôn ngữ nào bạn đang nói? Vì nó có vẻ như nhảm nhí.",
+    "Sự ngu ngốc không phải là một tội ác để bạn tự do đi.",
+    "Bạn là bằng chứng cho thấy sự tiến hóa có thể đi ngược lại.",
+    "Tôi sẽ hỏi bạn bao nhiêu tuổi nhưng tôi biết bạn không thể đếm cao đó.",
+    "Là một người ngoài cuộc, bạn nghĩ gì về loài người?",
+    "Bộ não không phải là tất cả. Trong trường hợp của bạn họ chẳng là gì cả.",
+    "Thông thường mọi người sống và học hỏi. Bạn chỉ sống.",
+    "Tôi không biết điều gì khiến bạn thật ngu ngốc, nhưng nó thực sự hoạt động.",
+    "Tiếp tục nói chuyện, một ngày nào đó bạn sẽ nói điều gì đó thông minh! (Tôi nghi ngờ điều đó)",
+    "Sốc tôi, nói điều gì đó thông minh.",
+    "IQ của bạn thấp hơn kích thước giày của bạn.",
+    "Than ôi! Các chất dẫn truyền thần kinh của bạn không còn làm việc nữa.",
+    "Bạn có điên bạn ngốc.",
+    "Mọi người đều có quyền ngu ngốc nhưng bạn đang lạm dụng đặc quyền.",
+    "Tôi xin lỗi tôi đã làm tổn thương cảm xúc của bạn khi tôi gọi bạn là ngu ngốc. Tôi nghĩ bạn đã biết rằng.",
+    "Bạn nên thử nếm thử xyanide.",
+    "Enzyme của bạn có nghĩa là tiêu hóa chất độc chuột.
+    "Bạn nên thử ngủ mãi mãi.",
+    "Đón một khẩu súng và tự bắn mình.",
+    "Bạn có thể tạo ra một kỷ lục thế giới bằng cách nhảy từ một chiếc máy bay mà không cần dù.",
+    "Dừng nói chuyện BS và nhảy trước một tàu đạn chạy.",
+    "Hãy thử tắm bằng axit hydrochloric thay vì nước.",
+    "Hãy thử điều này: Nếu bạn nín thở dưới nước trong một giờ, sau đó bạn có thể giữ nó mãi mãi.",
+    "Đi xanh! Dừng hít oxy.",
+    "Chúa đang tìm kiếm bạn. Bạn nên rời đi để gặp anh ta.",
+    "Cung cấp 100% của bạn. Bây giờ, đi tặng máu.",
+    "Hãy thử nhảy từ một tòa nhà hàng trăm câu chuyện nhưng bạn chỉ có thể làm điều đó một lần.",
+    "Bạn nên tặng bộ não của bạn thấy rằng bạn không bao giờ sử dụng nó.",
+    "Tình nguyện cho mục tiêu trong một phạm vi bắn.",
+    "Những cú đánh đầu là niềm vui. Lấy cho mình một.",
+    "Bạn nên thử bơi với những con cá mập trắng tuyệt vời.",
+    "Bạn nên vẽ mình đỏ và chạy trong một cuộc đua marathon bò.",
+    "Bạn có thể ở dưới nước cho đến hết cuộc đời mà không quay trở lại.",
+    "Làm thế nào về bạn ngừng thở trong 1 ngày? Điều đó sẽ rất tuyệt.",
+    "Hãy thử khiêu khích một con hổ trong khi cả hai bạn đang ở trong một cái lồng.",
+    "Bạn đã thử chụp bản thân cao tới 100m bằng Canon.",
+    "Bạn nên thử giữ TNT trong miệng và đốt cháy nó.",
+    "Hãy thử chơi bắt và ném với RDX niềm vui của nó.",
+    "Tôi nghe thấy phogine là độc hại nhưng tôi đoán bạn sẽ không ngại hít nó cho vui.",
+    "Phóng mình vào ngoài vũ trụ trong khi quên oxy trên trái đất.",
+    "Bạn nên thử chơi rắn và thang, với những con rắn thực sự và không có thang.",
+    "Khiêu vũ trần truồng trên một vài dây HT.",
+    "Volcano thật là bể bơi tốt nhất cho bạn.",
+    "Bạn nên thử tắm nước nóng trong một ngọn núi lửa.",
+    "Cố gắng dành một ngày trong một quan tài và nó sẽ là của bạn mãi mãi.",
+    "Nhấn uranium với neutron di chuyển chậm trong sự hiện diện của bạn. Nó sẽ là một kinh nghiệm đáng giá.",
+    "Bạn có thể là người đầu tiên bước lên nắng. Hãy thử.",
 )
 
 SLAP_TEMPLATES = (
-    "{user1} {hits} {user2} with a {item}.",
-    "{user1} {hits} {user2} in the face with a {item}.",
-    "{user1} {hits} {user2} around a bit with a {item}.",
-    "{user1} {throws} a {item} at {user2}.",
-    "{user1} grabs a {item} and {throws} it at {user2}'s face.",
-    "{user1} launches a {item} in {user2}'s general direction.",
-    "{user1} starts slapping {user2} silly with a {item}.",
-    "{user1} pins {user2} down and repeatedly {hits} them with a {item}.",
-    "{user1} grabs up a {item} and {hits} {user2} with it.",
-    "{user1} ties {user2} to a chair and {throws} a {item} at them.",
-    "{user1} gave a friendly push to help {user2} learn to swim in lava."
+     "{user1} {hits} {user2} với {mục}.",
+     "{user1} {hits} {user2} Trong khuôn mặt với {mục}.",
+     "{user1} {hits} {user2} xung quanh một chút với {mục}.",
+     "{user1} {throws} a {item} tại {user2}.",
+     "{user1} lấy {item} và {throws} nó tại khuôn mặt của {user2}.",
+     "{user1} khởi chạy một {item} trong hướng chung chung của {user2}.",
+     "{user1} bắt đầu tát {user2} ngớ ngẩn với {item} .",
+     "{user1} ghim {user2} xuống và lặp lại {hits} chúng với {item} .",
+     "{user1} lấy một {item} và {hits} {user2} với nó.",
+     "{user1} Ties {user2} sang ghế và {throws} và một {item} tại họ.",
+     "{user1} đã đưa ra một cú hích thân thiện để giúp {user2} học bơi trong dung nham."
 )
 
 ITEMS = (
@@ -199,33 +199,27 @@ This will create two buttons on a single line, instead of one button per line.
 """
 
 VietnameseStrings = {
-    "send-start": """Hi {}, My name is {} 🇱🇰 If you have any questions on how to use me, read /help - and then head to @YanaBotGroup.
+    "send-start": """Hi {}, Tên tôi là {}. Nếu bạn có bất kỳ câu hỏi nào về cách sử dụng tôi, hãy đọc /help
 
-I'm a group manager bot maintained by [this person](tg://user?id={654839744}).
-I'm built in python3, using the \
-python-telegram-bot library, and am fully opensource - you can find what makes me tick\
-[here](https://github.com/Naviya2/GroupMaster3))!
+Tôi là một bot quản lý nhóm được duy trì bởi [owogram](tg://user?id={1845169735}).
 
-Feel free to submit pull requests on github, or to contact my support group, @leosupportx, with any bugs, questions \
-or feature requests you might have :)
-
-If you enjoying using me and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+Nếu bạn thích sử dụng tôi và / hoặc muốn giúp tôi sống sót trong tự nhiên, nhập /donate để giúp tài trợ/nâng cấp VPS của tôi!
 """,
 
-    "send-help": """Hey there 👋 
+    "send-help": """Xin chào 👋 
 
-I'm *{}*🇱🇰
+I'm *{}*
 
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of the things I can help you with.
+Tôi là một bot quản lý nhóm mô-đun với một vài tính năng bổ sung thú vị! Hãy xem phần sau để biết một số điều tôi có thể giúp bạn.
 
 Main commands available:
- - /start: Cool command to check if the bot is alive or not 🙂
- - /help: PM's you this message 😏
- - /help <module name>: PM's you info about that module 😏
- - /lang: Change bot language 🗣
+ - /start: Lệnh tuyệt vời để kiểm tra xem bot còn sống hay không🙂
+ - /help: PM là bạn tin nhắn này 😏
+ - /help <module name>: PM của bạn thông tin về mô-đun đó 😏
+ - /lang: Thay đổi ngôn ngữ bot 🗣
  - /settings:
-   - in PM: will send you your settings for all supported modules 🙂
-   - in a group: will redirect you to pm, with all that chat's settings 🙂
+   - in PM: sẽ gửi cho bạn cài đặt của bạn cho tất cả các mô-đun được hỗ trợ 🙂
+   - trong một nhóm: sẽ chuyển hướng bạn đến pm, với tất cả cài đặt của cuộc trò chuyện đó 🙂
    {}
    """,
 
